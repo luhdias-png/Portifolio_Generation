@@ -1,8 +1,5 @@
 # 🚀 Portfólio Generation
 
-🔗 Acesse o repositório:  
-👉 https://github.com/luhdias-png/Portifolio_Generation
-
 ---
 
 ## 📌 Sobre o Projeto
