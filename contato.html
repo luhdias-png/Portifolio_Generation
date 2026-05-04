@@ -1,94 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas — Portfólio Full-Stack</title>
-    <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
-    <!-- Link do Awesome icon -->
+    <meta name="description" content="Meu portifolio para demonstração de HTML">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Fim do link Awesome -->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <header>
-        <div class="container_nav">
-            <h2>Dev-Lucas</h2>
-            <nav class="nav-link">
-                <ul>
-                    <li class="hideMobile"><a class="link-bar" href="#">Home</a></li>
-                    <li class="hideMobile"><a class="link-bar" href="#">Sobre</a></li>
-                    <li class="hideMobile"><a class="link-bar" href="#">Habilidades</a></li>
-                    <li class="hideMobile"><a class="link-bar" href="#">Projetos</a></li>
-                    <li class="hideMobile"><a class="link-bar" href="#">Contatos</a></li>
-                    <li class="hideMenu" onclick=showSidebar()><a class="link-bar menu" href="#">
-                        <i class="fa-solid fa-bars"></i>
-                    </a></li>
-                </ul>
+    
+    <!-- Cabeçalho da Página (header) -->
+    <header class="menu-container">
+        <div class="menu-content">
+            <a href="index.html" id="titulo">Portfolio</a>
 
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="index.html#hero">Inicio</a>
+                    <li><a href="index.html#about">Sobre</a>
+                    <li><a href="index.html#projects">Projetos</a>
+                    <li><a href="index.html#contact">Contato</a>
+                </ul>
             </nav>
         </div>
     </header>
-    <nav>
-        <ul class="sidebar">
-            <li onclick=hideSidebar()><a class="link-bar close" href="#">
-                <i class="fa-solid fa-xmark"></i>
-            </a></li>
-            <li><a class="link-bar" href="#">Home</a></li>
-            <li><a class="link-bar" href="#">Sobre</a></li>
-            <li><a class="link-bar" href="#">Habilidades</a></li>
-            <li><a class="link-bar" href="#">Projetos</a></li>
-            <li><a class="link-bar" href="#">Contatos</a></li>
-        </ul>
-    </nav>
-    <section class="container">
-        <div class="text-lucas">
-            <h1>Um novo desenvolvedor FULL-STACK.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt quibusdam ratione. Suscipit qui eius omnis incidunt, repudiandae in temporibus itaque porro amet, numquam voluptatibus, nulla fuga recusandae sequi modi?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati temporibus sapiente alias eligendi nisi maiores aliquam nemo voluptatibus porro vitae eius possimus, hic deleniti quis odio at ipsa provident?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni asperiores aliquam soluta dolorem adipisci aliquid quo totam molestias accusantium ipsum, quas distinctio doloremque? Corporis sunt maiores quam officiis distinctio harum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis placeat dicta consequatur eaque quam quas possimus eos accusantium magni nesciunt rerum, deleniti veniam! Delectus autem eius necessitatibus in quis.
-            </p>
-        </div>
-        <div class="image-lucas">
-            <img class="lucas" src="img/Lucas.png" alt="Lucas">
-        </div>
-    </section>
 
+    <!-- Seção Principal da Página (main) -->
+    <main>
+        <section class="success-container">
+            <article class="success-content">
+                <figure class="success-icon">
+                    <div class="check">
+                    <i id="check" class="fa-solid fa-check"></i>
+                    </div>
+                </figure>
+
+                <h1>E-mail Enviado com Sucesso!</h1>
+                <h2>Obrigado por entrar em contato! <br> Logo Retornarei com a resposta.</h2>
+
+                <a href="index.html" class="botao">Voltar ao inicio</a>
+            </article>
+        </section>
+        
+    </main>
+
+    <!-- Rodapé da Página (footer) -->
     <footer>
-        <ul class="list-footer">
-            <h2>Contatos</h2>
-            <div class="list-link">
-                <li>
-                    <a class="link-icon" href="#">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="link-icon" href="#">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="link-icon" href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-            </div>
-        </ul>
-        <div class="contato">
-            <h3>Entre em contato</h3>
-            <input type="email" name="" id="" placeholder="Nome">
-            <textarea style="resize: none;" name="" id="" cols="45" rows="7" placeholder="Digite sua mensagem"></textarea>
-        </div>
-
-        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        Desenvolvedor por Lucas Dias
     </footer>
-</body>
 
+</body>
 </html>
